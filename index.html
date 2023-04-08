@@ -9,7 +9,7 @@
     <!-- css for the icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
-    <!-- swipper css --> 
+    <!-- swipper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
 
@@ -745,6 +745,95 @@
         <!--==================== TESTIMONIAL ====================-->
         <section class="testimonial section">
 
+            <h2 class="section__title">Testimonial</h2>
+            <span class="section__subtitle">My client saying</span>
+
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <!--==================== TESTIMONIAL1 ====================-->
+                    <div class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="3.jpeg" alt="" class="testimonial__img">
+
+                                <div>
+                                    <h3 class="testimonial__name">meena</h3>
+                                    <span class="testimonial__client">Client</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <p class="testimonial__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa praesentium nam distinctio
+                            facere dicta?
+                        </p>
+                    </div>
+                    <!--==================== TESTIMONIAL2 ====================-->
+                    <div class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="3.jpeg" alt="" class="testimonial__img">
+
+                                <div>
+                                    <h3 class="testimonial__name">maxx</h3>
+                                    <span class="testimonial__client">Client</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <p class="testimonial__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa praesentium nam distinctio
+                            facere dicta?
+                        </p>
+                    </div>
+
+                    <!--==================== TESTIMONIAL3 ====================-->
+                    <div class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="3.jpeg" alt="" class="testimonial__img">
+
+                                <div>
+                                    <h3 class="testimonial__name">mike</h3>
+                                    <span class="testimonial__client">Client</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <p class="testimonial__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa praesentium nam distinctio
+                            facere dicta?
+                        </p>
+                    </div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-testimonial"></div>
+            </div>
         </section>
 
         <!--==================== CONTACT ME ====================-->
@@ -772,22 +861,44 @@
 
     <!-- below is the portfolio scroll js -->
     <script>
-        const swiper = new Swiper(".portfolio__container", {
-    
-    cssMode: true,
-    loop:true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable:true,
-    },
-    
-  }); 
+        const swiperPortfolio = new Swiper(".portfolio__container", {
+
+            cssMode: true,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+        }); 
     </script>
-   
+
+    <!-- below is the testimonial scroll js -->
+    <script>
+        const swiperTestimonial = new Swiper(".testimonial__container", {
+            loop: true,
+            grabCursor:true,
+            spaceBetween:48,
+    
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets:true,
+            },
+
+            breakpoints:{
+                568:{
+                    slidesPerView:2,
+                }
+            }
+
+        }); 
+    </script>
+
 </body>
 
 </html>
