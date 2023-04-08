@@ -1,3 +1,4 @@
+
 /*==================== MENU SHOW Y HIDDEN====================*/
 
 const navMenu=document.getElementById('nav-menu')
@@ -97,6 +98,24 @@ modalCloses.forEach((modalClose)=>{
 })
 
 /*==================== PORTFOLIO SWIPER  ====================*/
+
+
+// WE WROTE THE BELOW CODE THE IN THE INDEX.HMTL FILE
+// const swiper = new Swiper(".swiper", {
+    
+//     cssMode: true,
+//     loop:true,
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+//     pagination: {
+//       el: ".swiper-pagination",
+     
+//     },
+//     // mousewheel: true,
+//     // keyboard: true,
+//   });
 
 
 /*==================== TESTIMONIAL ====================*/

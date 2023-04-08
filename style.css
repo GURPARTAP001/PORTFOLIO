@@ -697,7 +697,55 @@ img {
 }
 
 /*==================== PORTFOLIO ====================*/
+.portfolio__container{
+    overflow: initial;
+}
 
+.portfolio__content{
+    padding: 0 1.5rem;
+   display: flex !important;
+   flex-direction: column;
+  align-items: center !important;
+}
+
+.portfolio__img{
+    width: 264px;
+    border-radius: 0.5rem;
+}
+
+
+.portfolio__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+    text-align: center;
+}
+
+.portfolio__description{
+    margin-bottom: var(--mb-0-75);
+    text-align: center;
+}
+
+.portfolio__button:hover .button__icon{
+    transform: translate(.25rem);
+}
+
+.swiper-button-prev::after,.swiper-button-next::after{
+    content: "" !important;
+
+}
+
+.swiper-portfolio-icon{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.swiper-button-prev{
+    left:-.5rem;
+}
+
+.swiper-button-next{
+    right:-.5rem;
+}
 
 /*==================== PROJECT IN MIND ====================*/
 
