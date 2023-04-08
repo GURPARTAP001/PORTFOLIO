@@ -1120,7 +1120,7 @@ img {
 
         .nav__icon,
         .nav__close,
-        .nav__toggle{
+        .nav__toogle{
             display:none ;
         }
 
@@ -1134,7 +1134,8 @@ img {
         }
 
         .change-theme{
-            margin: 0;
+            margin: 0 20px;
+
         }
 
         .home__container{
@@ -1268,24 +1269,29 @@ img {
         grid-template-columns: repeat(3,238px);
     }
 
+    .portfolio__container{
+        /* background-color: black; */
+        height: 400px;
+    }
     .portfolio__content{
         column-gap: 5rem;
     }
 
     .swiper-portfolio-icon{
-        font-size: 3.5rem !important;
+        font-size: 2.5rem ;
+        /* background-color: black; */
     }
 
-    .swiper-button-prev{
-        left: -3.5rem !important;
-    }
+    /* .swiper-button-prev{
+        /* left: -3.5rem !important; */
+    /* } */
 
-    .swiper-button-next{
-        right: -3.5rem !important;
-    }
+    /* .swiper-button-next{ */
+        /* right: -3.5rem !important; */
+    /* } */
 
     .swiper-horizontal >.swiper-pagination-bullets{
-        bottom: -4.5rem !important;
+        bottom: 0rem !important;
     }
 
     .contact__form{
